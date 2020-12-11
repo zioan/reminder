@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Video.module.css";
+import Paragraph from "./Paragraph";
 
 export default function Video(props) {
   return (
@@ -9,9 +10,9 @@ export default function Video(props) {
         className={styles.iframe}
         src={props.url}
         frameBorder="0"
-        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
+      <Paragraph text={props.text} />
     </>
   );
 }

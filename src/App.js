@@ -12,12 +12,14 @@ function App() {
             <Video
               title="First video"
               url="https://www.youtube.com/embed/C3tIKYXQ3xY"
+              text="Video 1 description"
             />
           </div>
           <div className="col-md-6">
             <Video
               title="Second video"
               url="https://www.youtube.com/embed/cE7tSzwHGiQ"
+              text="Video 2 description"
             />
           </div>
         </div>
