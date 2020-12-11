@@ -1,31 +1,28 @@
-import logo from "./logo.svg";
-import "./App.css";
 import Button from "./Button";
 import TextInput from "./TextInput";
+import Video from "./Video";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="custom-header">My Custom Header</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          On the fly change.
-          <br /> Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button id="myCustomId" className="buttonClass" />
-        <br />
-        <TextInput />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <div className="row">
+          <h1 className="text-center">My Videos</h1>
+          <div className="col-md-6">
+            <Video
+              title="First video"
+              url="https://www.youtube.com/embed/C3tIKYXQ3xY"
+            />
+          </div>
+          <div className="col-md-6">
+            <Video
+              title="Second video"
+              url="https://www.youtube.com/embed/cE7tSzwHGiQ"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
